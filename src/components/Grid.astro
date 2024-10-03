@@ -3,17 +3,17 @@
 // const data = await response.json();
 // const randomUser = data;
 
-import { data } from "../database/database";
+import { lista, template } from "../pages/app";
 import Card from "./Card.astro";
 ---
 
-<template id="template-li">
-  <ul>
+<div id="template-li">
+  <ul id="lista">
     <li>
       <Card />
     </li>
   </ul>;
-</template>
+</div>
 
 <!-- {
   data.map((item) => {

@@ -44,10 +44,10 @@ import { data } from "../database/database";
 
 <div class="card">
   <div class="front">
-    <img src={data[1].img} alt="monkey-img" />
+    <img src={data[0].img} alt={data[1].back} />
   </div>
 
   <div class="back">
-    <h2>Monkey</h2>
+    <h2>{data[0].back}</h2>
   </div>
 </div>
