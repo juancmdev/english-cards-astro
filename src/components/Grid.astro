@@ -1,0 +1,12 @@
+---
+const response = await fetch("https://pokeapi.co/api/v2/pokemon/ditto");
+const data = await response.json();
+const randomUser = data;
+---
+
+<div id="template-li">
+  <li class="list">
+    <!-- <b>Imagen: </b><span id="imagen"></span> -->
+    {randomUser.game_indices[0].version.name}
+  </li>
+</div>
