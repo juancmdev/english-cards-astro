@@ -1,0 +1,53 @@
+---
+
+---
+
+<style>
+  img {
+    max-width: 100%;
+  }
+
+  .card {
+    perspective: 1000px;
+    border: 1px solid black;
+    width: 350px;
+    height: 350px;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .front {
+    transform: rotateY(0deg);
+  }
+
+  .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+  }
+
+  .card:hover .front {
+    transform: rotateY(-180deg);
+  }
+
+  .card:hover .back {
+    transform: rotateY(0deg);
+  }
+</style>
+
+<div class="card">
+  <div class="front">
+    <img src="/src/images/monkey.jpg" alt="monkey-img" />
+  </div>
+
+  <div class="back">
+    <h2>Monkey</h2>
+  </div>
+</div>
