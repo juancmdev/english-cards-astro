@@ -1,5 +1,5 @@
 ---
-
+import { data } from "../database/database";
 ---
 
 <style>
@@ -44,7 +44,7 @@
 
 <div class="card">
   <div class="front">
-    <img src="/src/images/monkey.jpg" alt="monkey-img" />
+    <img src={data[1].img} alt="monkey-img" />
   </div>
 
   <div class="back">

@@ -4,18 +4,23 @@
 // const randomUser = data;
 
 import { data } from "../database/database";
+import Card from "./Card.astro";
 ---
 
-<div id="template-li">
+<template id="template-li">
   <ul>
-    {
-      data.map((item) => {
-        return (
-          <li class="list">
-            <img src={item.img} alt="image" />{" "}
-          </li>
-        );
-      })
-    }
+    <li>
+      <Card />
+    </li>
   </ul>;
-</div>
+</template>
+
+<!-- {
+  data.map((item) => {
+    return (
+      <li class="list">
+        <img src={item.img} alt="image" />{" "}
+      </li>
+    );
+  })
+} -->
